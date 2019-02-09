@@ -15,6 +15,8 @@
 		D0681E30220EB5F1002726AE /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0681E2F220EB5F1002726AE /* window_shopperTests.swift */; };
 		D0681E3B220EB5F1002726AE /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0681E3A220EB5F1002726AE /* window_shopperUITests.swift */; };
 		D0681E4B220EBCDE002726AE /* textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0681E4A220EBCDE002726AE /* textField.swift */; };
+		D0B50532220EEEF600112478 /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B50531220EEEF600112478 /* wage.swift */; };
+		D0B50533220EF04A00112478 /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B50531220EEEF600112478 /* wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		D0681E3A220EB5F1002726AE /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		D0681E3C220EB5F1002726AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0681E4A220EBCDE002726AE /* textField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
+		D0B50531220EEEF600112478 /* wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		D0681E19220EB5F0002726AE /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				D0B50530220EEEE300112478 /* Model */,
 				D0681E49220EBCBA002726AE /* View */,
 				D0681E48220EB73D002726AE /* Controller */,
 				D0681E1A220EB5F0002726AE /* AppDelegate.swift */,
@@ -142,6 +146,14 @@
 				D0681E4A220EBCDE002726AE /* textField.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D0B50530220EEEE300112478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0B50531220EEEF600112478 /* wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0681E1D220EB5F0002726AE /* MainVC.swift in Sources */,
+				D0B50532220EEEF600112478 /* wage.swift in Sources */,
 				D0681E1B220EB5F0002726AE /* AppDelegate.swift in Sources */,
 				D0681E4B220EBCDE002726AE /* textField.swift in Sources */,
 			);
@@ -286,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0681E30220EB5F1002726AE /* window_shopperTests.swift in Sources */,
+				D0B50533220EF04A00112478 /* wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

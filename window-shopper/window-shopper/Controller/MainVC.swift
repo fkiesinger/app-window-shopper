@@ -13,9 +13,17 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var wageField: textField!
     @IBOutlet weak var priceField: textField!
+    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var hours: UILabel!
+    @IBAction func clear(_ sender: Any) {
+        clear()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Result - Labels sind Hidden
+        clear()
         //Button wird mit Eigenschaften erstellt
         let calcBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
         calcBtn.backgroundColor = #colorLiteral(red: 1, green: 0.4990437031, blue: 0.03226675838, alpha: 1)
@@ -32,8 +40,21 @@ class MainVC: UIViewController {
         
     }
 
+    func clear() {
+        result.isHidden = true
+        hours.isHidden = true
+        wageField.text = ""
+        priceField.text = ""
+    }
     @objc func calculate() {
-        
+        if let wageField = wageField.text, let priceField = priceField.text {
+            if let wage = Double(wageField), let price = Double(priceField) {
+                view.endEditing(true)
+                result.isHidden = false
+                hours.isHidden = false
+                result.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
     }
 
 }
